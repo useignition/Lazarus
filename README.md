@@ -1,6 +1,6 @@
 # Lazarus
 
-Lazarus is a local VPN which harnesses the power of Apple's Network Extension's to create VPN which blocks Enterprise (and 7-day certificates?) revokes.
+Lazarus is a local VPN which harnesses the power of Apple's Network Extension's to create VPN which blocks Enterprise (and 7-day certificates? (not expiry just manual revokes)) revokes.
 
 # It's free
 
