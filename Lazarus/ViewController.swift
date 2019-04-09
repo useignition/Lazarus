@@ -42,23 +42,23 @@ class ViewController: UIViewController {
         self.status = VPNManager.shared.vpnStatus
     }
     
-    func onVPNStatusChanged(){
+    @objc func onVPNStatusChanged(){
         self.status = VPNManager.shared.vpnStatus
     }
     
     func updateConnectButton(){
         switch status {
         case .connecting:
-            connectButton.setTitle("Starting", for: UIControlState())
+            connectButton.setTitle("Starting", for: UIControl.State())
         // statusLabel.text = "Starting"
         case .disconnecting:
-            connectButton.setTitle("Disconnecting", for: UIControlState())
+            connectButton.setTitle("Disconnecting", for: UIControl.State())
         // statusLabel.text = "Disconnecting"
         case .on:
-            connectButton.setTitle("Protecting", for: UIControlState())
+            connectButton.setTitle("Protecting", for: UIControl.State())
         // statusLabel.text = "Protecting"
         case .off:
-            connectButton.setTitle("Start Protecting", for: UIControlState())
+            connectButton.setTitle("Start Protecting", for: UIControl.State())
             // statusLabel.text = "Start Protecting"
             
         }
