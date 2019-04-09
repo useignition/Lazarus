@@ -66,6 +66,8 @@ class VPNManager {
             self.vpnStatus = .disconnecting
         case .disconnected, .invalid:
             self.vpnStatus = .off
+        @unknown default:
+            fatalError()
         }
         print(self.vpnStatus)
     }
